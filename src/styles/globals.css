@@ -1,7 +1,8 @@
 :root {
   --gap: 12px;
+  --max-width: 990px;
 
-  --font-body: system-ui, sans-serif;
+  --font-body: 'Open Sans Variable', system-ui, sans-serif;
 
   --light-color: #e2e7e4;
   --dark-color: #11141d;
@@ -23,7 +24,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--dark-color);
   color: var(--light-color);
-  max-width: 990px;
+  max-width: var(--max-width);
   margin-right: auto;
   margin-left: auto;
 }
@@ -45,6 +46,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  font-weight: 800;
 }
 
 h1 {
