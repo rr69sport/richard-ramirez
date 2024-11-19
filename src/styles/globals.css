@@ -5,9 +5,7 @@
 
   --light-color: #e2e7e4;
   --dark-color: #11141d;
-  --alt-bg-color: color-mix(in srgb,
-      var(--dark-color) 96%,
-      var(--light-color));
+  --alt-bg-color: color-mix(in srgb, var(--dark-color) 96%, var(--light-color));
   --main-color: #ecf00b;
 }
 
@@ -28,10 +26,6 @@ body {
   max-width: 990px;
   margin-right: auto;
   margin-left: auto;
-}
-
-section {
-  padding: var(--gap);
 }
 
 footer {

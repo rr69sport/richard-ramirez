@@ -48,15 +48,28 @@ import SkillCardLink from "@/components/SkillCardLink.astro";
 
 <style>
   section {
-    background-color: var(--alt-bg-color);
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(var(--gap) / 2);
+    padding: var(--gap);
 
-    & li {
-      flex: 1;
+    background-color: var(--alt-bg-color);
+
+    & h2 {
+      margin-top: 0;
+    }
+
+    & p {
+      font-size: 1.15em;
+    }
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(var(--gap) / 2);
+
+      & li {
+        flex: 1;
+
+        font-size: 0.75em;
+      }
     }
   }
 </style>
