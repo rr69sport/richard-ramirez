@@ -1,18 +1,24 @@
----
-
----
-
 <footer>
   <p>
     Sitio web hecho con <a href="https://astro.build/" target="_blank">Astro</a>
+  </p>
+  <p>
+    Favicon generado en: <a href="https://favicon.io/">favicon.io</a>
+  </p>
+  <p>
+    Íconos de: <a href="https://tabler.io/icons">tabler.io/icons</a>
   </p>
 </footer>
 
 <style>
   footer {
-    padding: var(--gap);
+    padding: 3em var(--gap);
 
     text-align: center;
+
+    & p {
+      font-size: 0.8em;
+    }
 
     & a {
       color: var(--main-color);
@@ -20,6 +26,12 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    @media screen and (min-width: 600px) {
+      display: flex;
+      gap: var(--gap);
+      justify-content: center;
     }
   }
 </style>

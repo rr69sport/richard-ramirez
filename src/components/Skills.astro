@@ -53,8 +53,9 @@ import SkillCardLink from "@/components/SkillCardLink.astro";
 
 <style>
   section {
-    padding: var(--gap);
+    padding: 2em var(--gap) 3em;
 
+    text-align: center;
     background-color: var(--alt-bg-color);
 
     & h2 {
@@ -68,9 +69,17 @@ import SkillCardLink from "@/components/SkillCardLink.astro";
     & ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: calc(var(--gap) / 2);
 
       & li {
+        flex: auto;
+        padding: calc(var(--gap) / 2) var(--gap);
+
+        border-radius: var(--border-radius);
+
+        /* font-size: 0.8em; */
+        background-color: var(--dark-color);
       }
     }
   }
