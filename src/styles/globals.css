@@ -1,0 +1,51 @@
+:root {
+  --gap: 12px;
+
+  --font-body: system-ui, sans-serif;
+
+  --light-color: #e2e7e4;
+  --dark-color: #11141d;
+  --main-color: #ecf00b;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  max-width: 990px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  margin-top: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
