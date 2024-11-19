@@ -5,6 +5,9 @@
 
   --light-color: #e2e7e4;
   --dark-color: #11141d;
+  --alt-bg-color: color-mix(in srgb,
+      var(--dark-color) 96%,
+      var(--light-color));
   --main-color: #ecf00b;
 }
 
@@ -50,6 +53,26 @@ h6 {
   text-wrap: balance;
 }
 
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
 p {
   text-wrap: pretty;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

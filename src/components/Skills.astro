@@ -1,3 +1,62 @@
+---
+import SkillCardLink from "@/components/SkillCardLink.astro";
+---
+
 <section>
   <h2>Habilidades</h2>
+  <p>Lenguajes y herramientas que utilizo en mi trabajo.</p>
+  <ul>
+    <li>
+      <SkillCardLink
+        text="HTML"
+        link="https://developer.mozilla.org/es/docs/Web/HTML"
+      />
+    </li>
+    <li>
+      <SkillCardLink
+        text="CSS"
+        link="https://developer.mozilla.org/es/docs/Web/CSS"
+      />
+    </li>
+    <li>
+      <SkillCardLink
+        text="JavaScript"
+        link="https://developer.mozilla.org/es/docs/Web/JavaScript"
+      />
+    </li>
+    <li>
+      <SkillCardLink text="TypeScript" link="https://www.typescriptlang.org/" />
+    </li>
+    <li>
+      <SkillCardLink text="Svelte" link="https://svelte.dev/" />
+    </li>
+    <li>
+      <SkillCardLink text="Astro" link="https://astro.build/" />
+    </li>
+    <li>
+      <SkillCardLink text="React" link="https://es.react.dev/" />
+    </li>
+    <li>
+      <SkillCardLink text="Node.js" link="https://nodejs.org/en" />
+    </li>
+    <li><SkillCardLink text="Git" link="https://git-scm.com/" /></li>
+    <li>
+      <SkillCardLink text="GitHub" link="https://github.com/" />
+    </li>
+  </ul>
 </section>
+
+<style>
+  section {
+    background-color: var(--alt-bg-color);
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--gap) / 2);
+
+    & li {
+      flex: 1;
+    }
+  }
+</style>

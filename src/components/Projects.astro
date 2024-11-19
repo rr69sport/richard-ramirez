@@ -1,3 +1,23 @@
+---
+import ProjectCardLink from "@/components/ProjectCardLink.astro";
+---
+
 <section>
   <h2>Proyectos práctivos</h2>
+  <ProjectCardLink link="https://github.com" />
+  <ProjectCardLink link="https://github.com" />
+  <ProjectCardLink link="https://github.com" />
 </section>
+
+<style>
+  section {
+    padding: var(--gap) 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+
+    & h2 {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

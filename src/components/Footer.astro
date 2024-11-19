@@ -3,5 +3,22 @@
 ---
 
 <footer>
-  <p>© Richard Ramírez</p>
+  <p>
+    Sitio web hecho con <a href="https://astro.build/" target="_blank">Astro</a>
+  </p>
 </footer>
+
+<style>
+  footer {
+    text-align: center;
+    padding: var(--gap);
+
+    & a {
+      color: var(--main-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+</style>

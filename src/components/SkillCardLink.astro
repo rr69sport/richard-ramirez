@@ -1,0 +1,35 @@
+---
+import ExternalLinkIcon from "./ExternalLinkIcon.astro";
+
+interface Props {
+  text: string;
+  link: string;
+}
+
+const { text, link } = Astro.props;
+---
+
+<a href={link} target="_blank">
+  {text}
+  <ExternalLinkIcon width="1em" height="1em" />
+</a>
+
+<style>
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    padding: calc(var(--gap) / 2) var(--gap);
+    border-radius: 3px;
+    background-color: var(--dark-color);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--main-color);
+    }
+  }
+</style>
