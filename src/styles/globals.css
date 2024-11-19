@@ -27,6 +27,10 @@ body {
   margin-left: auto;
 }
 
+section {
+  padding: var(--gap);
+}
+
 footer {
   margin-top: auto;
 }

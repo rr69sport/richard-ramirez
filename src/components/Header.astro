@@ -3,21 +3,28 @@
 ---
 
 <header>
-  <div class="image-profile">
-    <img src="/assets/images/image-profile.png" alt="Richard Ramírez" />
-    <div class="name-and-role">
-      <h1 class="name">Richard Ramírez</h1>
-      <h2 class="role">Desarrollador Frontend</h2>
-    </div>
-  </div>
-  <div class="description">
-    <p>
-      Capaz de adaptarme a distintas situaciones de trabajo, ya sea en equipo o
-      en proyectos individuales. Con un enfoque en la experiencia de usuario y
-      la colaboración, me dedico a crear experiencias de alta calidad. Mi
-      enfoque en la experiencia de usuario me permite diseñar y desarrollar
-      interfaces que sean fáciles de usar y que se adapten a las necesidades de
-      los usuarios.
-    </p>
+  <img src="/assets/images/image-profile.png" alt="Richard Ramírez" />
+  <div class="name-and-role">
+    <h1>Richard Ramírez</h1>
+    <p>Desarrollador Frontend</p>
   </div>
 </header>
+
+<style>
+  header {
+    font-size: 1.2em;
+    text-align: center;
+    & .name-and-role {
+      padding: 1px; /* to avoid margin collapse */
+    }
+
+    & h1 {
+      color: var(--main-color);
+    }
+
+    & img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+</style>
