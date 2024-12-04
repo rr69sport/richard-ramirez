@@ -1,5 +1,5 @@
 ---
-import ExternalLinkIcon from "@/components/icons/ExternalLinkIcon.astro";
+import ExternalLinkIcon from "@/icons/ExternalLinkIcon.astro";
 
 interface Props {
   link: string;
@@ -10,10 +10,7 @@ const { link } = Astro.props;
 
 <a href={link} target="_blank">
   <article>
-    <img
-      src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
-      alt=""
-    />
+    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg" alt="" />
     <h3>
       Nombre del Proyecto
       <ExternalLinkIcon width="1.2em" height="1.2em" />
