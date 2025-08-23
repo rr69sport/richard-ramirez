@@ -1,12 +1,12 @@
 ---
-import ProjectCardLink from "@/components/ProjectCardLink.astro";
+import ProjectCardLink from '@/components/ProjectCardLink.astro'
 ---
 
 <section>
-  <h2>Proyectos Práctivos</h2>
-  <ProjectCardLink link="https://github.com" />
-  <ProjectCardLink link="https://github.com" />
-  <ProjectCardLink link="https://github.com" />
+  <h2>Proyectos Prácticos</h2>
+  <ProjectCardLink link="https://github.com/rr69sport" />
+  <ProjectCardLink link="https://github.com/rr69sport" />
+  <ProjectCardLink link="https://github.com/rr69sport" />
 </section>
 
 <style>
@@ -28,7 +28,7 @@ import ProjectCardLink from "@/components/ProjectCardLink.astro";
     }
 
     &:after {
-      content: "Sección en desarrollo";
+      content: 'Sección en desarrollo';
 
       display: grid;
       place-items: center;
@@ -41,6 +41,9 @@ import ProjectCardLink from "@/components/ProjectCardLink.astro";
       color: var(--main-color);
       font-size: 3em;
       font-weight: 800;
+
+      /* Momentáneo hasta tener nuevos proyectos que se puedan mostrar aquí */
+      pointer-events: none;
     }
   }
 </style>
