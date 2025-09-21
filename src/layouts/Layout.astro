@@ -1,36 +1,36 @@
 ---
 // Supports weights 300-800
-import "@fontsource-variable/open-sans";
-import "@/styles/globals.css";
+import '@fontsource-variable/open-sans'
+import '@/styles/globals.css'
 
-import Header from "@/sections/Header.astro";
-import Footer from "@/sections/Footer.astro";
-import SocialMedia from "@/components/SocialMedia.astro";
+import Header from '@/sections/Header.astro'
+import Footer from '@/sections/Footer.astro'
+import SocialMedia from '@/components/SocialMedia.astro'
 
 interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio personal de Richard Ramírez" />
-		<meta name="author" content="Richard Ramírez" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
-		<title>{title}</title>
-	</head>
-	<body>
-		<SocialMedia />
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio personal de Richard Ramírez" />
+    <meta name="author" content="Richard Ramírez" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <SocialMedia />
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
