@@ -1,0 +1,40 @@
+---
+import type { TechnologiesType } from '@/types'
+
+interface Props {
+  technologies: TechnologiesType
+}
+
+const { technologies } = Astro.props
+---
+
+<ul>
+  {technologies.map((tech) => <li>{tech}</li>)}
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: calc(var(--gap) / 2);
+    padding: 0;
+  }
+
+  @media screen and (width >= 430px) {
+    ul {
+      flex-direction: row;
+    }
+  }
+
+  li {
+    flex: 1;
+    padding: calc(var(--gap) / 2) var(--gap);
+
+    font-size: 0.75em;
+    text-align: center;
+    background-color: var(--dark-color);
+
+    border-radius: var(--border-radius);
+  }
+</style>

@@ -44,23 +44,21 @@ import LinkedInIcon from '@/icons/LinkedInIcon.astro'
     & li.full-left {
       margin-left: auto;
     }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    padding: calc(var(--gap) / 2) var(--gap);
 
-    & a {
-      display: flex;
-      align-items: center;
-      gap: var(--gap);
+    color: var(--dark-color);
+    font-weight: 700;
+    background-color: var(--light-color);
 
-      padding: calc(var(--gap) / 2) var(--gap);
+    border-radius: 3px;
 
-      color: var(--dark-color);
-      font-weight: 700;
-      background-color: var(--light-color);
-
-      border-radius: 3px;
-
-      &:hover {
-        background-color: var(--main-color);
-      }
+    &:hover {
+      background-color: var(--main-color);
     }
   }
 

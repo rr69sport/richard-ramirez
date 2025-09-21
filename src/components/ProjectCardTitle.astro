@@ -1,0 +1,11 @@
+---
+import type { ProjectType } from '@/types'
+
+interface Props {
+  title: ProjectType['title']
+}
+
+const { title } = Astro.props
+---
+
+<h3>{title}</h3>

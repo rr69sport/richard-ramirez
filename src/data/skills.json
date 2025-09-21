@@ -1,0 +1,34 @@
+[
+  {
+    "name": "HTML",
+    "doc": "https://developer.mozilla.org/es/docs/Web/HTML"
+  },
+  {
+    "name": "CSS",
+    "doc": "https://developer.mozilla.org/es/docs/Web/CSS"
+  },
+  {
+    "name": "JavaScript",
+    "doc": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+  },
+  {
+    "name": "TypeScript",
+    "doc": "https://www.typescriptlang.org/"
+  },
+  {
+    "name": "Astro",
+    "doc": "https://astro.build/"
+  },
+  {
+    "name": "Svelte",
+    "doc": "https://svelte.dev/"
+  },
+  {
+    "name": "React",
+    "doc": "https://es.react.dev/"
+  },
+  {
+    "name": "Git",
+    "doc": "https://git-scm.com/"
+  }
+]

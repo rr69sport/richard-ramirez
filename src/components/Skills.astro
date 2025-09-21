@@ -1,66 +1,48 @@
 ---
 import SkillCardLink from '@/components/SkillCardLink.astro'
+import skills from '@/data/skills.json'
 ---
 
 <section>
   <h2>Habilidades</h2>
   <p>Lenguajes y herramientas que utilizo en mi trabajo.</p>
   <ul>
-    <li>
-      <SkillCardLink text="HTML" link="https://developer.mozilla.org/es/docs/Web/HTML" />
-    </li>
-    <li>
-      <SkillCardLink text="CSS" link="https://developer.mozilla.org/es/docs/Web/CSS" />
-    </li>
-    <li>
-      <SkillCardLink text="JavaScript" link="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-    </li>
-    <li>
-      <SkillCardLink text="TypeScript" link="https://www.typescriptlang.org/" />
-    </li>
-    <li>
-      <SkillCardLink text="Svelte" link="https://svelte.dev/" />
-    </li>
-    <li>
-      <SkillCardLink text="Astro" link="https://astro.build/" />
-    </li>
-    <li>
-      <SkillCardLink text="React" link="https://es.react.dev/" />
-    </li>
-    <li>
-      <SkillCardLink text="Git" link="https://git-scm.com/" />
-    </li>
+    {
+      skills.map((skill) => (
+        <li>
+          <SkillCardLink text={skill.name} link={skill.doc} />
+        </li>
+      ))
+    }
   </ul>
 </section>
 
 <style>
   section {
+    margin-top: 2em;
     padding: 2em var(--gap) 3em;
 
     text-align: center;
     background-color: var(--alt-bg-color);
+  }
 
-    & h2 {
-      margin-top: 0;
-    }
+  h2 {
+    margin-top: 0;
+  }
 
-    & p {
-      font-size: 1.15em;
-    }
+  p {
+    font-size: 1.15em;
+  }
 
-    & ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: calc(var(--gap) / 2);
-
-      margin-top: 3em;
-
-      & li {
-        flex: auto;
-
-        border-radius: var(--border-radius);
-      }
-    }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--gap) / 2);
+    margin-top: 3em;
+  }
+  li {
+    flex: auto;
+    border-radius: var(--border-radius);
   }
 </style>

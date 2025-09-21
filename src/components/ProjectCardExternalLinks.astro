@@ -1,0 +1,65 @@
+---
+import ExternalLinkIcon from '@/icons/ExternalLinkIcon.astro'
+import type { LinksType } from '@/types'
+
+interface Props {
+  links: LinksType
+}
+
+const { links } = Astro.props
+---
+
+<ul>
+  <li>
+    <a href={links.web} target="_blank">
+      Ver proyecto
+      <ExternalLinkIcon width="16" height="16" />
+    </a>
+  </li>
+  <li>
+    <a href={links.github} target="_blank">
+      Código fuente
+      <ExternalLinkIcon width="16" height="16" />
+    </a>
+  </li>
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--gap);
+    padding-top: var(--gap);
+  }
+
+  @media screen and (width >= 330px) {
+    ul {
+      flex-direction: row;
+    }
+  }
+
+  li {
+    flex: 1;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--gap) / 2);
+    padding: calc(var(--gap) / 2) var(--gap);
+
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+
+    border-radius: var(--border-radius);
+
+    &:hover {
+      background-color: var(--main-color);
+    }
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import ProjectCardTitle from '@/components/ProjectCardTitle.astro'
+import ProjectCardDescription from '@/components/ProjectCardDescription.astro'
+import ProjectCardCapture from '@/components/ProjectCardCapture.astro'
+import ProjectCardTechnologies from '@/components/ProjectCardTechnologies.astro'
+import ProjectCardExternalLinks from '@/components/ProjectCardExternalLinks.astro'
+import type { ProjectType } from '@/types'
+
+interface Props {
+  project: ProjectType
+}
+
+const { project } = Astro.props
+const { capture, title, description, technologies, links } = project
+---
+
+<article>
+  <ProjectCardCapture alt={capture.alt} src={capture.src} />
+  <ProjectCardTitle title={title} />
+  <ProjectCardDescription description={description} />
+  <ProjectCardTechnologies technologies={technologies} />
+  <ProjectCardExternalLinks links={links} />
+</article>
+
+<style>
+  article {
+    padding: var(--gap);
+    border-radius: var(--border-radius);
+
+    background-color: var(--alt-bg-color);
+  }
+</style>
