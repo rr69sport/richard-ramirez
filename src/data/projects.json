@@ -2,7 +2,7 @@
   {
     "capture": {
       "alt": "Captura de pantalla del proyecto Ingredients Skyrim",
-      "src": "https://raw.githubusercontent.com/rr69sport/ingredients-skyrim/refs/heads/main/ingredients-skyrim-capture.webp"
+      "imageName": "ingredients-skyrim-capture.png"
     },
     "title": "Ingredients Skyrim",
     "description": "Aplicación para filtar los ingredientes y poder ver sólo los ingredientes que coinciden en alguno de los efectos para poder crear pociones.",

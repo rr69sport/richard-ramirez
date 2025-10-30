@@ -1,5 +1,10 @@
+---
+import { Image } from 'astro:assets'
+import { IMAGES_VERCEL_STORAGE } from '@/constants/images-vercel-storage'
+---
+
 <header>
-  <img src="/assets/images/image-profile.png" alt="Richard Ramírez" />
+  <img src=`${IMAGES_VERCEL_STORAGE}/image-profile.png` alt="Richard Ramírez" />
   <div class="name-and-role">
     <h1>Richard Ramírez</h1>
     <p>Desarrollador Frontend</p>

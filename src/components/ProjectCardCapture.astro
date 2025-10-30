@@ -1,10 +1,11 @@
 ---
+import { IMAGES_VERCEL_STORAGE } from '@/constants/images-vercel-storage'
 interface Props {
   alt: string
-  src: string
+  captureName: string
 }
 
-const { alt, src } = Astro.props
+const { captureName, alt } = Astro.props
 ---
 
-<img src={src} alt={alt} />
+<img src=`${IMAGES_VERCEL_STORAGE}/${captureName}` alt={alt} />

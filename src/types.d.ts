@@ -6,7 +6,7 @@ export interface LinksType {
 }
 
 export interface CaptureType {
-  src: string
+  imageName: string
   alt: string
 }
 

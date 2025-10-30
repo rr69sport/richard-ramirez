@@ -15,7 +15,7 @@ const { capture, title, description, technologies, links } = project
 ---
 
 <article>
-  <ProjectCardCapture alt={capture.alt} src={capture.src} />
+  <ProjectCardCapture alt={capture.alt} captureName={capture.imageName} />
   <ProjectCardTitle title={title} />
   <ProjectCardDescription description={description} />
   <ProjectCardTechnologies technologies={technologies} />
